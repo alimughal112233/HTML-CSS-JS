@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 
+        Fist javascript practice
+    </h1>
+    <button type="button" onclick="document.getElementById('demo') .innerHTML=Date()"> 
+        click me 
+
+    </button>
+    <p id="demo">
+
+    </p>
+
+
+    <h1>
+        second javascript
+    </h1>
+    <button type="button" onclick="myfunction()">
+        click me 
+    </button>
+    <p id="ali">
+
+    </p>
+    <script>
+        function myfunction(){
+            document.getElementById('ali').innerHTML="my name is ali";
+        }
+    </script>
+
+
+    <h1>
+        third javascript
+    </h1>
+    <p id="font">
+        change the style font with color
+    </p>
+    <button type="button" onclick="cfuntion()">
+        change font color
+    </button>
+    <script>
+        function cfuntion(){
+            document.getElementById('font').style.fontSize="25px";
+            document.getElementById('font').style.color="yellow"
+            document.getElementById('font').style.background="black"
+        }
+    </script>
+
+    <h1>
+        fourth javascript
+    </h1>
+    <img id="bulbimage" src="offbulb.jpg" alt="offbulb" height="300px" width="300px"> <br>
+    <p>
+    <button type="button" onclick="bulbfuntion(0)">
+        light on
+    </button>
+    <button type="button" onclick="bulbfuntion(1)">
+        light off
+    </button>
+    </p>
+    <script>
+        function bulbfuntion(as){
+            var pic;
+            if (as==0){
+                pic="onbulb.jpg"
+            }
+            else{
+                pic="offbulb.jpg"
+                
+            }
+            document.getElementById('bulbimage').src=pic;
+        }
+    </script>
+</body>
+
+</html>

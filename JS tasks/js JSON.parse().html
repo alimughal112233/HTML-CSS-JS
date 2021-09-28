@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="example">
+
+    </p>
+    <script>
+        // JSON parse
+        const data = '{"name":"ali","age":25,"city":"gujranwala"}'
+        const obj = JSON.parse(data);
+        console.log(obj.name)
+        console.log(obj.age)
+        console.log(obj.city)
+
+            // JSON Stringfy
+            // const obj = {name: "ali", age: 25, city: "=gujranwala"};
+            // const myJSON = JSON.stringify(obj);
+            // document.getElementById("example").innerHTML = myJSON;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function firstfunction(){
+            document.write("this is outer function<br>")
+            function secondfunction(){
+                document.write("this is inner function<br>")
+                function thirdfunction(){
+                    document.write("this is inner of inner function")
+                }
+                thirdfunction();
+            }
+            secondfunction();
+        }
+        firstfunction();
+    </script>
+</body>
+</html>

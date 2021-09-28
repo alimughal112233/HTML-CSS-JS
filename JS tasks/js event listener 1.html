@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Btn">Try it</button>
+    <p id="example"></p>
+<script>
+        var a=document.getElementById("Btn");
+        a.addEventListener("mouseover",myFunction);
+        a.addEventListener("click",mySecondFunction);
+        a.addEventListener("mouseout",mythirdfunction);
+
+        function myFunction() {
+        document.getElementById("example").innerHTML += "Mouse over!<br>";
+        }
+        function mySecondFunction() {
+            document.getElementById("example").innerHTML += "Clicked!<br>";
+        }
+        function mythirdfunction(){
+            document.getElementById("example").innerHTML+="Mouse out<br>"
+        }
+    </script>
+</body>
+</html>
