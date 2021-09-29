@@ -11,11 +11,9 @@
 
     </p>
     <script>
-        let price = 10;
-        let VAT = 0.25;
-        let total = `Total: ${(price * (1 + VAT)).toFixed(1)}`;
-        
-        document.getElementById("example").innerHTML = total;
-        </script>
+        var months=["jan","feb",",march","april","may","june"];
+        months.splice(4,5,"august","sep");
+        document.getElementById("example").innerHTML=months;
+    </script>
 </body>
 </html>
