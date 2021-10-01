@@ -7,19 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">
-        click me 
-    </button>
     <p id="example">
 
     </p>
     <script>
-        function displayDate(){
-            document.getElementById("example").innerHTML=Date();
-            alert("hello javascript");
-            alert("this function also executed");
+        const days=["mon","tue","wed","thurs"];
+        let x="";
+        for(i=0;i<days.length;i++){
+            x+=days[i]+"<br>"
         }
-        document.getElementById("btn").addEventListener("click" ,displayDate);
+        document.getElementById("example").innerHTML=x;
     </script>
 </body>
 </html>
