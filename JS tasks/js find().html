@@ -7,14 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="example">
-
-    </p>
     <script>
-        const ages=[13,41,21,26,25]
-        document.getElementById("example").innerHTML=ages.find(agecheck);
-        function agecheck(age){
-            return age>26
+        var marks=[5,3,10,18]
+        document.write(marks+"<br>")
+
+        var x=marks.filter(checkmarks)
+        document.write(x+"<br>")
+
+        function checkmarks(mark) {
+            return mark>5;
         }
     </script>
 </body>

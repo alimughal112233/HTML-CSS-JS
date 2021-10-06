@@ -7,13 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="example">
-
-    </p>
     <script>
-        var months=["jan","feb","march","april","may","june"];
-        months.splice(6,2,"july","august");
-        document.getElementById("example").innerHTML=months;
+        var num=[13,14,15,17,20];
+        document.write(num+"<br>");
+
+        var x=num.filter(bignum);
+        document.write(x+"<br>");
+
+        function bignum(check) {
+            return check > 15;
+        }
     </script>
 </body>
 </html>
