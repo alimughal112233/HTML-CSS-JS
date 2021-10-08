@@ -7,16 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="example">
-
-    </p>
     <script>
-        const days=["mon","tue","wed","thurs"];
-        let x="";
-        for(i=0;i<days.length;i++){
-            x+=days[i]+"<br>"
-        }
-        document.getElementById("example").innerHTML=x;
+        var a=["ali","hamza","mughal"]
+        document.write(a+"<br>");
+        a.pop();
+        document.write(a+"<br>");
+        a.push("kaleem")
+        document.write(a)
     </script>
 </body>
 </html>
