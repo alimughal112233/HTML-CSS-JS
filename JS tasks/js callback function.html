@@ -7,21 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="callback">
-
-    </p>
     <script>
-        function display(func){
-            document.getElementById("callback").innerHTML=func;
+        function display(){
+            alert("I am Ali")
         }
-        function firstfunction(){
-            display("ali");
+        function end(callback){
+            a=20;
+            callback();
         }
-        function secondfunction(){
-            display("mughal");
-        }
-        firstfunction();
-        secondfunction();
-        </script>
+        end(display);
+    </script>
 </body>
 </html>
