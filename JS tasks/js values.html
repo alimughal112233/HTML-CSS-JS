@@ -7,11 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="example">
+
+    </p>
     <script>
-        var a=["ali","kaleem","ahsan","kaleem","hammad"]
-        document.write(a+"<br>");
-        var b=a.lastIndexOf("kaleem")
-        document.write(b+"<br>")
+        const cars=["ferrari","corola","BMW","benz"];
+        const valu=cars.values();
+        let text="";
+        for (let x of valu){
+            text+=x+"<br>"
+        }
+        document.getElementById("example").innerHTML=text;
     </script>
 </body>
 </html>
